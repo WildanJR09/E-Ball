@@ -1,6 +1,6 @@
 # Wizard-Tech
 
-<img align="center" alt="architecture" src="./Resources/wizard-tech.jpg"/><br>
+<img align="center" alt="architecture" src="./resources/wizard-tech.jpg"/><br>
 
 # Introduction
 
@@ -9,18 +9,18 @@ The frontend is developed in react.js and the backend is developed in FastAPI. T
 
 # Technologies used
 
-1. ReactJS.<img align="left" alt="react" width="26px" src="./Resources/react.png" /><br>
+1. ReactJS.<img align="left" alt="react" width="26px" src="./resources/react.png" /><br>
    - Building the front-end UI.
    - Displaying Facial emotion in real-time.
    - establish and connect to WebSocket to send video frames and receive Emotion prediction probabilities with dominant emotion.
-2. FastAPI.<img align="left" alt="api" width="26px" src="./Resources/fastapi.svg" /><br>
+2. FastAPI.<img align="left" alt="api" width="26px" src="./resources/fastapi.svg" /><br>
    - Connect to webSocket, receive video frame, send model predictions to front-end server.
    - Build API.
-3. Tensorflow Keras.<img align="left" alt="keras" width="26px" src="./Resources/keras.png" /><br>
+3. Tensorflow Keras.<img align="left" alt="keras" width="26px" src="./resources/keras.png" /><br>
    - A pre-built emotion prediction Keras model is deployed.
    - The model classifies 7 different emotions emotion: happy, sad, neutral, disgusted, surprised, fear, and angry.
    - Model returns the prediction probability of each emotion.
-4. Tensorflow JS.<img align="left" alt="tf" width="26px" src="./Resources/Tensorflow.png" /><br>
+4. Tensorflow JS.<img align="left" alt="tf" width="26px" src="./resources/Tensorflow.png" /><br>
    - Face Detection model
    - Detect faces in an image using a Single Shot Detector architecture with a custom encoder(Blazeface).
 
@@ -51,7 +51,7 @@ $ npm start
 
 # Architecture
 
-[![Architecture](./Resources/HLD.png)]()
+[![Architecture](./resources/HLD.png)]()
 
 The process of streaming video in real-time was possible with WebSocket. In the pipeline, we send video frames from react server to the API server and receive the model's emotion prediction from the API server. The Keras model predicts the probability of each emotion for each frame.
 
