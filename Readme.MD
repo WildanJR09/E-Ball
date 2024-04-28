@@ -45,7 +45,7 @@ $ uvicorn main:app --reload
 ## Starting the React deployment server
 
 ```sh
-$ cd emotion-recognition
+$ cd website
 $ npm start
 ```
 
